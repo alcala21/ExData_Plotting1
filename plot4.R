@@ -18,7 +18,7 @@ data$Time <- NULL
 
 # Make plot 4
 
-# png(filename = "plot4.png", width = 480, height = 480)
+png(filename = "plot4.png", width = 480, height = 480)
 par(mfrow = c(2,2))
 with(data, {
 	plot(datetime, Global_active_power, type = "l", 
@@ -36,4 +36,4 @@ with(data, {
 
 	plot(datetime, Global_reactive_power, type = "l", col = "black")
 })
-# dev.off()
+dev.off()
